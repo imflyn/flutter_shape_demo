@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shape_demo/block_shapeborder.dart';
+
+import 'my_widget.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,34 +10,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          margin: EdgeInsets.only(top: 100, left: 40),
+          margin: EdgeInsets.only(top: 150, left: 40),
           child: Column(
             children: [
-              Container(
-                width: 200,
-                height: 70,
-                decoration: ShapeDecoration(
-                  color: Colors.yellow,
-                  shape: BlockShapeBorder(
-                    borderRadius: 4,
-                    borderWidth: 2,
-                    borderColor: Colors.black,
-                  ),
-                ),
+              MyWidget(),
+              SizedBox(
+                height: 2,
               ),
-              Container(
-                margin: EdgeInsets.only(top: 2),
-                width: 200,
-                height: 70,
-                decoration: ShapeDecoration(
-                  color: Colors.yellow,
-                  shape: BlockShapeBorder(
-                    borderRadius: 4,
-                    borderWidth: 2,
-                    borderColor: Colors.black,
-                  ),
-                ),
-              ),
+              // MyWidget(),
             ],
           ),
         ),
