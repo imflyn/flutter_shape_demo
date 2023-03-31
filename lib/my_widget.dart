@@ -66,15 +66,15 @@ class _MyState extends State<MyWidget> {
                 minWidth: 118,
               ),
               child: Container(
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: BlockShapeBorder(
-                      borderRadius: 6,
-                      borderWidth: 2,
-                      borderColor: Color(0xFF4280D7),
-                    ),
+                decoration: ShapeDecoration(
+                  color: Colors.white,
+                  shape: BlockShapeBorder(
+                    borderRadius: 6,
+                    borderWidth: 2,
+                    borderColor: Color(0xFF4280D7),
                   ),
-                  child: Container())),
+                ),
+              )),
           SizedBox(
             height: 12,
           )
