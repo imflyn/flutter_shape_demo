@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BlockShapeBorder extends ShapeBorder {
+class BlockShapeBorderTop extends ShapeBorder {
   double turning_width = 7;
   double turning_height = 9;
   double turning_width_long = 15;
@@ -10,7 +10,7 @@ class BlockShapeBorder extends ShapeBorder {
   final Color borderColor;
   final double borderRadius;
 
-  BlockShapeBorder({
+  BlockShapeBorderTop({
     this.borderWidth = 2.0,
     this.borderColor = Colors.black,
     this.borderRadius = 4,
@@ -62,10 +62,10 @@ class BlockShapeBorder extends ShapeBorder {
     );
 
     //下凸
-    path.lineTo(rect.left + turning_start_position + turning_width_long + turning_width + turning_width, rect.bottom);
-    path.lineTo(rect.left + turning_start_position + turning_width_long + turning_width, rect.bottom + turning_height);
-    path.lineTo(rect.left + turning_start_position + turning_width, rect.bottom + turning_height);
-    path.lineTo(rect.left + turning_start_position, rect.bottom);
+    // path.lineTo(rect.left + turning_start_position + turning_width_long + turning_width + turning_width, rect.bottom);
+    // path.lineTo(rect.left + turning_start_position + turning_width_long + turning_width, rect.bottom + turning_height);
+    // path.lineTo(rect.left + turning_start_position + turning_width, rect.bottom + turning_height);
+    // path.lineTo(rect.left + turning_start_position, rect.bottom);
 
     //左下角
     path.lineTo(rect.left + borderRadius, rect.bottom);
@@ -102,7 +102,7 @@ class BlockShapeBorder extends ShapeBorder {
 
   @override
   ShapeBorder scale(double t) {
-    return BlockShapeBorder(
+    return BlockShapeBorderTop(
       borderWidth: borderWidth * t,
       borderColor: borderColor,
       borderRadius: borderRadius * t,
