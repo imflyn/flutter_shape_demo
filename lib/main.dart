@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white,
         body: Container(
           margin: EdgeInsets.only(top: 100, left: 40),
-          child: Column(
+          child: ListView(
             children: [
               Container(
                 height: 50,
